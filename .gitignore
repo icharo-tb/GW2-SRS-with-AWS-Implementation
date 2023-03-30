@@ -1,0 +1,11 @@
+# ENV variables
+.env
+
+# Pycache
+__pycache__
+
+# DB path
+gw2_srs.db
+
+# VSCode conf
+.vscode
