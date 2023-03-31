@@ -2,16 +2,26 @@
 import requests
 from bs4 import BeautifulSoup
 
+from s3_load import s3_loader
+
 import re
 import json
 import sys
 import uuid
 
 from dotenv import load_dotenv
+import logging
+import logging.config
 import os
 
 import pymongo
 import sqlite3
+
+import pandas as pd
+
+"""Logger conf
+"""
+logging.config.fileConfig("../config/logging.conf")
 
 """.ENV Load
 """
@@ -50,7 +60,7 @@ def gw2_etl(url):
         for line in logData:
             jsonFile = line
 
-        print('Extraction done!')        
+        logging.info('Extraction done!')        
         return jsonFile
     
     #---------------TRANSFORM----------------
@@ -276,7 +286,7 @@ def gw2_etl(url):
 
                     phase4_time_raw = data['phases'][9]['duration']
                     phase4_time = round(phase4_time_raw/1000,1)
-                except:
+                except IndexError:
                     phase4_dps = data['phases'][8]['dpsStats']
 
                     phase4_time_raw = data['phases'][8]['duration']
@@ -1120,7 +1130,7 @@ def gw2_etl(url):
 
                     phase5_time_raw = data['phases'][9]['duration']
                     phase5_time = round(phase5_time_raw/1000,1)
-                except Exception:
+                except IndexError:
                     try:
                         phase5_dps = data['phases'][10]['dpsStats']
 
@@ -1142,7 +1152,7 @@ def gw2_etl(url):
 
                     phase6_time_raw = data['phases'][11]['duration']
                     phase6_time = round(phase6_time_raw/1000,1)
-                except Exception:
+                except IndexError:
                     try:
                         phase6_dps = data['phases'][12]['dpsStats']
 
@@ -1175,31 +1185,36 @@ def gw2_etl(url):
                 }
 
         except Exception as e:
-            print('Error' + str(e))
+            logging.warning('Error' + str(e))
             pass
         
-        print('Transformation done!')
+        logging.info('Transformation done!')
         return stats_dict
 
         #-----------------LOAD-------------------
 
     def db_load(json_data):
-        print('-'*10)
+        logging.info('-'*10)
 
         #-----------SQLite conn-----------
-        print('SQLite conn starting...')
+        logging.info('SQLite conn starting...')
 
         try:
             conn = sqlite3.connect(os.getenv('DB_DIR'))
             cur = conn.cursor()
         except Exception as e:
-            print('Connection could not be done' + str(e))
+            logging.warning(f'Connection could not be done: {str(e)}')
             sys.exit()
         
         #-----------UUID data insert----------
-        uuid_token = uuid.uuid4()
+        """
+        Trial phase:
+            Not yet working, maybe needs blob datatype since SQLite does not accept UUID as datatype
+        """
+        #uuid_token = uuid.uuid4()
 
-        cur.execute(f"INSERT INTO encounters(encounter_id,encounter_date) VALUES({uuid_token},{data['encounterStart']})")
+        #cur.execute(f"INSERT INTO encounters(encounter_id,encounter_date) VALUES({uuid_token},{data['encounterStart']})")
+        #cur.execute('''INSERT INTO encounters(encounter_id,encounter_date) VALUES(?,?)''',(uuid_token, data['encounterStart']))
         
         #-----------DPS data insert-----------
         try:
@@ -1210,7 +1225,6 @@ def gw2_etl(url):
                     cur.execute(
                         f"INSERT INTO vg_dps(phase1_dps,phase2_dps,phase3_dps,FK_player_id) VALUES({dps1},{dps2},{dps3},'{acc}')"
                     )
-                print('DPS data inserted')
             elif nameTag == 'gors':
                 boss_id = 2
                 
@@ -1338,7 +1352,7 @@ def gw2_etl(url):
                         f"INSERT INTO prlqadim_dps(phase1_dps,phase2_dps,phase3_dps,phase4_dps,phase5_dps,phase6_dps,FK_player_id) VALUES({dps1},{dps2},{dps3},{dps4},{dps5},{dps6},'{acc}')"
                     )
         except Exception as e:
-            print(f"Failed to insert dps data: {str(e)}")
+            logging.warning(f"Failed to insert dps data: {str(e)}")
         
         #-----------Players name, profession and account data insert-----------
         for (name,acc,profession) in zip(player_names,player_acc,player_classes):
@@ -1362,23 +1376,31 @@ def gw2_etl(url):
             )
             conn.commit()
 
-        print('Player data inserted!')
+            logging.info(f'{nameTag} dps data inserted.')
 
-        print('-'*10)
+            sqlite_df = pd.read_sql_query(f"SELECT * FROM {nameTag}_dps;",conn)
+            sqlite_csv = sqlite_df.to_csv(f'./tmp/{nameTag}_dps.csv',index=False)
+
+            s3_loader('gw2-srs-bucket',sqlite_csv)
+            os.remove(sqlite_csv)
+
+        logging.info('Player data inserted!')
+
+        logging.info('-'*10)
 
         #-----------MongoDB conn-----------
-        print('MongoDB conn starting...')
+        logging.info('MongoDB conn starting...')
 
         try:
            client = pymongo.MongoClient(os.getenv('MONGO_DB'))
         except Exception as e:
-           print('Connection could not be done' + str(e))
+           logging.warning(f'Connection could not be done: {str(e)}')
            sys.exit()
 
         db = client['gw2_srs_stats']
         collection = db['encounters']
 
         collection.insert_one(json_data)
-        print('MongoDB load done!')
+        logging.info('MongoDB load done!')
     
     db_load(store_data(log_scrape(url)))
