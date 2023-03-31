@@ -36,11 +36,24 @@ if __name__=='__main__':
             cnt % len(boss_list)
 
     try:
-        s3_loader()
+        s3_loader('gw2-srs-bucket','urls.txt')
     except Exception as e:
         logging.warning(e)
 
     url_list = s3_reader('gw2-srs-bucket','urls.txt')
 
+    cnt = 0
+
     for url in url_list:
-        gw2_etl(url)
+
+        cnt += 1
+
+        try:
+            st_url = url.strip()
+            rep = st_url.replace('log', 'logContent')
+            gw2_etl(rep)
+            logging.info(f'Log nº: {cnt}')
+        except IndexError as e:
+            logging.warning(str(e))
+        finally:
+            continue
