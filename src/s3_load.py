@@ -6,7 +6,7 @@ import boto3
 
 from s3_conn import s3_bucket
 
-def s3_loader():
+def s3_loader(aws_bucket,file):
 
     load_dotenv()
 
@@ -24,6 +24,6 @@ def s3_loader():
     temp = os.getenv('TEMP_DIR')
     
     bucket = s3_bucket(ak=aws_access_key_id,sk=aws_secret_access_key,conf=conf).s3_connector()
-    bucket.upload_file(temp,'gw2-srs-bucket','urls.txt')
+    bucket.upload_file(temp,aws_bucket,file)
 
     os.remove(temp)
