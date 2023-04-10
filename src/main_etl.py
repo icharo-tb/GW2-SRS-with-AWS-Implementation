@@ -39,6 +39,7 @@ def gw2_etl(url):
         HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'}
 
         response = requests.get(url=url, headers=HEADERS)
+
         soup = BeautifulSoup(response.content, 'html.parser')
 
         data = soup.find_all('script')[8]
@@ -1376,13 +1377,17 @@ def gw2_etl(url):
             )
             conn.commit()
 
-            logging.info(f'{nameTag} dps data inserted.')
+        logging.info(f'{nameTag} dps data inserted.')
 
-            sqlite_df = pd.read_sql_query(f"SELECT * FROM {nameTag}_dps;",conn)
-            sqlite_csv = sqlite_df.to_csv(f'./tmp/{nameTag}_dps.csv',index=False)
+        uuid_tag = uuid.uuid4()
 
-            s3_loader('gw2-srs-bucket',sqlite_csv)
-            os.remove(sqlite_csv)
+        sqlite_df = pd.read_sql_query(f"SELECT * FROM {nameTag}_dps;",conn)
+        sqlite_df.to_csv(f'./tmp/{nameTag}_dps.csv',index=False)
+        csv_name = f'{uuid_tag}-{nameTag}_dps.csv'
+
+        s3_loader(f'./tmp/{nameTag}_dps.csv','gw2-srs-bucket',csv_name)
+
+        logging.info('CSV uploaded.')
 
         logging.info('Player data inserted!')
 
