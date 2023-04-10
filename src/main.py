@@ -7,6 +7,9 @@ from main_etl import gw2_etl
 import logging
 import logging.config
 
+import sys
+import os
+
 """Logger conf
 """
 logging.config.fileConfig("../config/logging.conf")
@@ -36,7 +39,8 @@ if __name__=='__main__':
             cnt % len(boss_list)
 
     try:
-        s3_loader('gw2-srs-bucket','urls.txt')
+        s3_loader('./tmp/urls.txt','gw2-srs-bucket','urls.txt')
+        logging.info('File loaded to S3.')
     except Exception as e:
         logging.warning(e)
 
@@ -51,9 +55,13 @@ if __name__=='__main__':
         try:
             st_url = url.strip()
             rep = st_url.replace('log', 'logContent')
+            logging.info(rep)
             gw2_etl(rep)
             logging.info(f'Log nº: {cnt}')
         except IndexError as e:
-            logging.warning(str(e))
-        finally:
+            logging.warning(e)
             continue
+        #finally:
+            #continue
+
+    os.remove('./tmp/*')
