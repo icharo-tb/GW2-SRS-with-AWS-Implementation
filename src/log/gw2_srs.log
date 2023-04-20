@@ -1732,3 +1732,240 @@
 2023-04-10 12:16:57,264 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/20230319-162403_gors_kill
 2023-04-10 12:17:58,019 - root - WARNING - list index out of range
 2023-04-10 12:17:58,020 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/20230317-203602_gors_kill
+2023-04-20 19:18:41,808 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/vg?onlyCM=onlyNM
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,886 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:45,887 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/gors?onlyCM=onlyNM
+2023-04-20 19:18:47,991 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,991 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:47,992 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/sab?onlyCM=onlyNM
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,438 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:50,439 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/sloth?onlyCM=onlyNM
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,710 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:52,712 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/matt?onlyCM=onlyNM
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:54,936 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/kc?onlyCM=onlyNM
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,481 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,482 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,482 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:18:57,484 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/xera?onlyCM=onlyNM
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:00,509 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/cairn?onlyCM=onlyNM
+2023-04-20 19:19:03,012 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,012 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,012 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:03,013 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/mo?onlyCM=onlyNM
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:06,065 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/sam?onlyCM=onlyNM
+2023-04-20 19:19:09,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,804 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:09,806 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/dei?onlyCM=onlyNM
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,246 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:13,249 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/sh?onlyCM=onlyNM
+2023-04-20 19:19:14,820 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,820 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,820 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,820 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,820 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,821 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,821 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,821 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,821 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,821 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:14,821 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/dhuum?onlyCM=onlyNM
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,803 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:17,805 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/ca?onlyCM=onlyNM
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,664 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,665 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,665 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,665 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:19,665 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/twins?onlyCM=onlyNM
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:22,364 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/q1?onlyCM=onlyNM
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:24,087 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/adina?onlyCM=onlyNM
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:26,909 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/sabir?onlyCM=onlyNM
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:29,828 - root - INFO - https://gw2wingman.nevermindcreations.de/content/raid/q2?onlyCM=onlyNM
+2023-04-20 19:19:33,798 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:33,799 - root - WARNING - can only concatenate str (not "NoneType") to str
+2023-04-20 19:19:35,221 - root - INFO - File loaded to S3.
+2023-04-20 19:19:36,479 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/20230410-230044_vg_kill
+2023-04-20 19:19:36,938 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/20230410-230044_vg_kill: 200
+2023-04-20 19:19:36,964 - root - INFO - Extraction done!
+2023-04-20 19:19:37,165 - root - INFO - Transformation done!
+2023-04-20 19:19:37,165 - root - INFO - ----------
+2023-04-20 19:19:37,165 - root - INFO - SQLite conn starting...
+2023-04-20 19:19:37,205 - root - INFO - vg dps data inserted.
+2023-04-20 19:19:38,701 - root - INFO - CSV uploaded.
+2023-04-20 19:19:38,702 - root - INFO - Player data inserted!
+2023-04-20 19:19:38,702 - root - INFO - ----------
+2023-04-20 19:19:38,703 - root - INFO - MongoDB conn starting...
+2023-04-20 19:19:39,990 - root - INFO - MongoDB load done!
+2023-04-20 19:19:39,993 - root - INFO - Log nº: 1
+2023-04-20 19:19:39,994 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/xsS3-20230218-013700_vg
+2023-04-20 19:19:42,803 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/xsS3-20230218-013700_vg: 200
+2023-04-20 19:19:42,841 - root - INFO - Extraction done!
+2023-04-20 19:19:43,276 - root - INFO - Transformation done!
+2023-04-20 19:19:43,276 - root - INFO - ----------
+2023-04-20 19:19:43,276 - root - INFO - SQLite conn starting...
+2023-04-20 19:19:43,312 - root - INFO - vg dps data inserted.
+2023-04-20 19:19:44,895 - root - INFO - CSV uploaded.
+2023-04-20 19:19:44,895 - root - INFO - Player data inserted!
+2023-04-20 19:19:44,895 - root - INFO - ----------
+2023-04-20 19:19:44,895 - root - INFO - MongoDB conn starting...
+2023-04-20 19:19:46,237 - root - INFO - MongoDB load done!
+2023-04-20 19:19:46,238 - root - INFO - Log nº: 2
+2023-04-20 19:19:46,238 - root - INFO - https://gw2wingman.nevermindcreations.de/logContent/20230220-214739_vg_kill
