@@ -38,7 +38,11 @@ def gw2_etl(url):
 
         HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'}
 
-        response = requests.get(url=url, headers=HEADERS)
+        try:
+            response = requests.get(url=url, headers=HEADERS)
+            logging.info(f'{url}: {response.status_code}')
+        except IndexError as ie:
+            logging.critical(f'{url} could not be reached. Error: ( {ie} )')
 
         soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -1216,6 +1220,14 @@ def gw2_etl(url):
 
         #cur.execute(f"INSERT INTO encounters(encounter_id,encounter_date) VALUES({uuid_token},{data['encounterStart']})")
         #cur.execute('''INSERT INTO encounters(encounter_id,encounter_date) VALUES(?,?)''',(uuid_token, data['encounterStart']))
+
+        # Encounter date - data insert
+        """Encounter Date
+
+        Insert of encounter date on table encounters -> related to ?
+        """
+
+        #cur.execute(f"INSERT INTO _ VALUES _")
         
         #-----------DPS data insert-----------
         try:

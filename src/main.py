@@ -61,7 +61,5 @@ if __name__=='__main__':
         except IndexError as e:
             logging.warning(e)
             continue
-        #finally:
-            #continue
 
     os.remove('./tmp/*')
