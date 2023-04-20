@@ -27,17 +27,17 @@ This module have been kept quite the same as the original, just making some few 
 features.
 
 ### **AWS S3**
-Making use of a S3 bucket, it is intended to store some raw and clean data on it, so it can later pivot to other use cases such as AWS database with DynamoDB or RDBMS.
+Making use of a S3 bucket, it is intended to store some raw and clean data on it, so it can later pivot to other tools such as AWS database options with DynamoDB or RDBMS.
 
 ### **Docker**
 The intention behind the use of Docker is make the ETL functional anywhere at anytime, by making a Docker container it will be possible to execute the ETL is other devices such as AWS EC2 machine.
 
 ### **Airflow**
-To make the ETL a lot more functional it is intended to implement an scheduler, like Airflow in this case. By making Airflow execute the ETL monthly (about 31 days of wait per round) we will make sure the ETL keeps not only running but also adding new data.
+To make the ETL a lot more functional it is intended to implement an Airflow DAG. By making Airflow execute the ETL monthly (about 31 days of wait per round) we will make sure the ETL keeps not only running but also adding new data.
 
 ### **Extra Information**
 - This ETL is running in batch mode, no stream mode is being used since the data requires being stored first on a web.
-- The ETL use Python logging to store all the errors or value information into a log file that keeps us updated of what is happening.
+- The ETL use Python logging to store all the errors or value information into a log file.
 
 
 ## Project Schema
