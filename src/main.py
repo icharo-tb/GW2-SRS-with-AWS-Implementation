@@ -7,7 +7,6 @@ from main_etl import gw2_etl
 import logging
 import logging.config
 
-import sys
 import os
 
 """Logger conf
@@ -25,41 +24,46 @@ boss_list = [
 
 if __name__=='__main__':
 
-    cnt = 0
+    def etl_executer(rot:list):
 
-    while cnt <= 18:
+        cnt = 0
+
+        while cnt <= 18:
+            try:
+                url = f'https://gw2wingman.nevermindcreations.de/content/raid/{rot[cnt]}?onlyCM=onlyNM'
+                logging.info(url)
+                url_writer_script(url)
+            except Exception as e:
+                logging.warning(e)
+            finally:
+                cnt += 1
+                cnt % len(rot)
+
         try:
-            url = f'https://gw2wingman.nevermindcreations.de/content/raid/{boss_list[cnt]}?onlyCM=onlyNM'
-            logging.info(url)
-            url_writer_script(url)
+            s3_loader('./tmp/urls.txt','gw2-srs-bucket','urls.txt')
+            logging.info('File loaded to S3.')
         except Exception as e:
             logging.warning(e)
-        finally:
+
+        url_list = s3_reader('gw2-srs-bucket','urls.txt')
+
+        cnt = 0
+
+        for url in url_list:
+
             cnt += 1
-            cnt % len(boss_list)
 
-    try:
-        s3_loader('./tmp/urls.txt','gw2-srs-bucket','urls.txt')
-        logging.info('File loaded to S3.')
-    except Exception as e:
-        logging.warning(e)
+            try:
+                st_url = url.strip()
+                rep = st_url.replace('log', 'logContent')
+                logging.info(rep)
+                gw2_etl(rep)
+                logging.info(f'Log nº: {cnt}')
+            except IndexError as e:
+                logging.warning(e)
+                continue
 
-    url_list = s3_reader('gw2-srs-bucket','urls.txt')
+        os.remove('./tmp/*')
 
-    cnt = 0
-
-    for url in url_list:
-
-        cnt += 1
-
-        try:
-            st_url = url.strip()
-            rep = st_url.replace('log', 'logContent')
-            logging.info(rep)
-            gw2_etl(rep)
-            logging.info(f'Log nº: {cnt}')
-        except IndexError as e:
-            logging.warning(e)
-            continue
-
-    os.remove('./tmp/*')
+    
+    etl_executer(rot=boss_list)
