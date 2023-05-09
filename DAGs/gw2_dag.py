@@ -1,11 +1,12 @@
 from airflow import DAG
-from airflow.operators.python import PythonOperator # task decorator over PythonOperator
+from airflow.operators.python import PythonOperator # Task decorator over PythonOperator
 from airflow.decorators import task
 
 from datetime import datetime,timedelta
 import time
 
 import logging
+import logging.config
 
 from src.main import etl_executer
 
@@ -24,22 +25,31 @@ with DAG(
 ) as dag:
     
     # https://airflow.apache.org/docs/apache-airflow/stable/howto/operator/python.html
+
+    logging.config.fileConfig("../config/logging.conf")
+
+    """Python Task Decorator
+
+    Initiate preparation task -> Check code starts
+
+    Execute ETL process -> Runs GW2-SRS ETl processes
+
+    End DAG -> log dag ending
+    """
     
     @task(task_id='airflow_prep')
     def airflow_prep(s):
-        print(f'Preparing Airflow...')
+        logging.info(f'Preparing Airflow...')
 
         time.sleep(s)
 
-        print('Ready!')
+        logging.info('Ready!')
 
     # T1
     airflow_prep(120)
 
     @task(task_id='gw2-etl')
     def exec_etl():
-
-        logging.config.fileConfig("../config/logging.conf")
 
         boss_list = [
         'vg','gors','sab','sloth','matt','kc','xera',
@@ -51,3 +61,14 @@ with DAG(
 
     # T2
     exec_etl()
+
+    @task(task_id='dag_finisher')
+    def dag_end():
+
+        now = datetime.now()
+
+        current_time = now.strftime("%H:%M:%S")
+        logging.info(f'Finalization time: {current_time}')
+
+    # T3
+    dag_end()
