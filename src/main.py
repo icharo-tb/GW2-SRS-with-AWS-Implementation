@@ -40,7 +40,7 @@ if __name__=='__main__':
                 cnt % len(rot)
 
         try:
-            s3_loader('./tmp/urls.txt','gw2-srs-bucket','urls.txt')
+            s3_loader('./tmp/urls.txt','gw2-srs-bucket','us-east-1','urls.txt')
             logging.info('File loaded to S3.')
         except Exception as e:
             logging.warning(e)
